@@ -84,7 +84,8 @@ module "mig1" {
   autoscaling_cpu = [{
     target : 0.6
   }]
-  max_replicas = 4  
+  max_replicas = 4
+  min_replicas = 3
   named_ports = [{
     name = "http",
     port = 80
